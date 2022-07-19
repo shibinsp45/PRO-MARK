@@ -1,0 +1,30 @@
+{% extends "base.html" %} {% block content %}
+<div class="signup-container">
+    <div class="card">
+        <p class="hline--3"> CREATE <strong><span style="color:#1B65A7;">ACCOUNT</strong></span></p>
+        <form name="signup_form"">
+          <label for="name">Username</label>
+          <input type="text" name="name" class="field" required />
+      
+          <label for="email">Email</label>
+          <input type="email" name="email" class="field" required />
+      
+          <label for="password">Password</label>
+          <input type="password" name="password" class="field" required />
+
+          <label for="subject">Subject</label>
+          <input type="text" name="subject" class="field" required />
+      
+          <p align="center" class="error--active error"></p>
+      
+          <input type="submit" value="SIGN UP" class="button" /> 
+        </form>
+      </div>
+      <div class="container2">
+          <img src="{{ url_for('static', filename='./images/signup.png')}}" class="signup-img">
+          <p>Already have an account?</p>
+          <a href="/home" class="btn-login--small">LOGIN</a>
+      </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends "base.html" %} {% block content %}
+<div class="pro-mark-container">
+  <p class="hline--1"> PRO <strong><span style="color:#1B65A7;">MARK</strong></span></p>
+  <p class="hline--3"><strong><span>Dashboard</strong></span></p>
+</div>
+<div class="dash-container">
+  <div class="container3">
+    <div class="login-info">
+      <p>Welcome: <strong>{{ session['user']['name'] }}</strong></p>
+      <p>Subject: <strong>{{ session['user']['subject'] }}</strong></p>
+      <a href="/user/signout" class="btn-logout--small">LOG OUT</a>
+    </div>
+    <div class="atten-container">
+      <p><strong>Collect Attendance</strong></p>
+      <form method="post" action="{{ url_for('requests') }}">
+        <input
+          type="submit"
+          value="CAPTURE IMAGE"
+          name="click"
+          class="capture-img-btn"
+          onclick="loading();"
+        />
+      </form>
+    </div>
+    <div class="show-atten">
+      <p><strong>Show Attendance Table</strong></p>
+      <form action="/show-attendance">
+        <input type="submit" value="SHOW ATTENDANCE" class="show-atten-btn" target="_blank"/>
+      </form>
+      <a href="/download-attendance" target="_blank" class="download-btn"
+        >DOWNLOAD FILE</a
+      >
+    </div>
+  </div>
+  <div class="camera-container">
+    <img src="{{ url_for('video_feed') }}" />
+  </div>
+  <div class="loading">
+    <p>Loading...</p>
+  </div>
+</div>
+{% endblock %}
