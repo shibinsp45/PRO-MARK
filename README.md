@@ -51,7 +51,6 @@ Show marked Attendance: Show the marked attendance and save it as the .csv file
 ![image](https://github.com/shibinsp45/PROMARK-Attendance-Marking-App/assets/63835182/579617d4-39ec-4f61-b3c4-1f2d7315f148)
 
 ### Documentation
-
 For detailed information and instructions on using the Attendance Management System, please refer to the project's documentation available on GitHub.
 
 ### Source Code
