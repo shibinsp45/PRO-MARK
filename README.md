@@ -58,7 +58,7 @@ For detailed information and instructions on using the Attendance Management Sys
 
 The complete source code for the Attendance Management System, including the Flask web application and the OpenCV face recognition implementation, can be found on GitHub.
 
-GitHub Repository: https://github.com/your-username/attendance-management-system
+GitHub Repository: https://github.com/shibinsp45/PROMARK-Attendance-Marking-App
 
 Get started with streamlined attendance tracking and management using the power of face recognition with this Attendance Management System! Feel free to contribute to the project and help it grow further!
 
