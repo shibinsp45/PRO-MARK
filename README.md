@@ -2,8 +2,7 @@
 ## 📑Mark Your Attendance In One Click
 ### Requirements
  - Upload your training images in the samples directory
- - Run app.py
- - 
+ - Run app.py 
 ### Attendance Management System with Face Recognition
 Homepage
 
